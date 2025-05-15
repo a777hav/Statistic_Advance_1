@@ -1,0 +1,424 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.1What is a random variable in probability theory.\n",
+        "\n",
+        "In probability theory, a random variable is a variable whose value is a numerical outcome of a random phenomenon. It's a function that maps outcomes of a random process to numbers.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "ZoAlHnStv9DZ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.2What are the types of random variables.\n",
+        "\n",
+        "Discrete Random Variable: A random variable that can only take on a finite number of values or a countably infinite number of values.\n",
+        "\n",
+        "Continuous Random Variable: A random variable that can take on any value within a given range. Examples include:\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "pPn8XXKWweK9"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.3 What is the difference between discrete and continuous distributions.\n",
+        "\n",
+        "discrete distribution :- A discrete distribution describes the probability of occurrence of each value of a discrete random variable. A discrete random variable is a variable whose value can only take on a finite number of values or a countably infinite number of values.\n",
+        "\n",
+        "Continuous Distributions :- A continuous distribution describes the probability of a continuous random variable falling within a particular range of values. A continuous random variable is a variable whose value can take on any value within a given range.\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "1ltK4vmHwxsv"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.4 What are probability distribution functions (PDF).\n",
+        "\n",
+        "A Probability Distribution Function (PDF) is a function that describes the relative likelihood for a random variable to take on a given value.\n",
+        "\n",
+        " * For Continuous Random Variables: The PDF is a continuous function, and it doesn't directly give the probability of the random variable taking on a specific value. Instead, the area under the PDF curve between two points represents the probability that the variable falls within that range.\n",
+        "\n",
+        " * For Discrete Random Variables: The PDF is usually called the Probability Mass Function (PMF), and it gives the probability of the random variable taking on a specific discrete value.\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "evekfje7xxrZ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.5 How do cumulative distribution functions (CDF) differ from probability distribution functions (PDF).\n",
+        "\n",
+        "* For continuous variables, the CDF is the integral of the PDF from negative infinity to the given point.\n",
+        "\n",
+        "* For discrete variables, the CDF is the sum of the PMF values up to the given point.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "1E1bE4v8ydqs"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.6 What is a discrete uniform distribution.\n",
+        "\n",
+        "A discrete uniform distribution is a probability distribution where a finite number of values are equally likely to be observed. In other words, each value within a given range has an equal probability of occurring.\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "8stoGCdXzNRf"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.7 What are the key properties of a Bernoulli distribution.\n",
+        "\n",
+        "The Bernoulli distribution is a discrete probability distribution that models the probability of a single event having two possible outcomes: success or failure. It's often represented by a random variable that takes the value 1 for success and 0 for failure.\n",
+        "\n",
+        "Key Properties\n",
+        "\n",
+        "1.Two Outcomes: The Bernoulli distribution only has two possible outcomes, often labeled as:\n",
+        "\n",
+        "Success (usually represented by 1)\n",
+        "Failure (usually represented by 0)\n",
+        "\n",
+        "2.Single Trial: It models the probability of an event in a single trial or experiment.\n",
+        "\n",
+        "3.Probability of Success (p): The probability of success is denoted by 'p', where 0 ≤ p ≤ 1.\n",
+        "\n",
+        "4.Probability of Failure (q): The probability of failure is denoted by 'q' and is equal to 1 - p (q = 1 - p).\n",
+        "\n",
+        "5.Probability Mass Function (PMF): The PMF of a Bernoulli distribution is given by:\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "2z9TtA8mzmee"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.8 What is the binomial distribution, and how is it used in probability.\n",
+        "\n",
+        "The binomial distribution is a discrete probability distribution that describes the probability of getting exactly k successes in n independent Bernoulli trials (experiments with two possible outcomes: success or failure).\n",
+        "\n",
+        "\n",
+        "Fixed Number of Trials (n): The experiment consists of a fixed number of trials.\n",
+        "\n",
+        "Independent Trials: The outcome of one trial does not affect the outcome of other trials.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "nRVXxu7C0MDF"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.9 What is the Poisson distribution and where is it applied.\n",
+        "\n",
+        "The Poisson distribution is a discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time or space if these events occur with a known average rate and independently of the time since the last event.\n",
+        "\n",
+        "Discrete: It deals with discrete events that can be counted (e.g., the number of customers arriving at a store).\n",
+        "\n",
+        "Independent Events: The occurrence of one event does not affect the probability of another event occurring.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "qUuXitx617Ll"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.10 What is a continuous uniform distribution.\n",
+        "\n",
+        "A continuous uniform distribution is a probability distribution where all values within a given range are equally likely to occur. It's often described as a \"rectangular\" distribution because its probability density function (PDF) is a constant value over the specified interval.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "qvBxsBLt4iQT"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.11 What are the characteristics of a normal distribution.\n",
+        "\n",
+        "* Bell-shaped Curve: The normal distribution has a characteristic bell shape, with the highest point at the mean and the curve tapering off symmetrically on both sides.\n",
+        "\n",
+        "* Symmetric: The distribution is perfectly symmetric around its mean, which is also the median and mode of the distribution.\n",
+        "\n",
+        "* Mean, Median, and Mode are Equal: The mean, median, and mode of a normal distribution are all equal and located at the center of the distribution.\n",
+        "\n",
+        "* Defined by Mean and Standard Deviation: The normal distribution is completely defined by two parameters: its mean (μ) and standard deviation (σ). The mean determines the location of the center of the distribution, and the standard deviation determines the spread or width of the distribution.\n",
+        "\n",
+        "* Infinite Support: The normal distribution has an infinite support, meaning that it extends from negative infinity to positive infinity. However, the probability density becomes very small as you move further away from the mean.\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "w9TdXtYg4zHK"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.12 What is the standard normal distribution, and why is it important.\n",
+        "\n",
+        "The standard normal distribution is a special case of the normal distribution with a mean (μ) of 0 and a standard deviation (σ) of 1. It is often denoted by the letter Z.\n",
+        "\n",
+        "importance of standard normal distribution :-\n",
+        "\n",
+        "* Standardization: It allows for the standardization of any normal distribution. By converting data from a normal distribution to Z-scores, we can compare and analyze data from different normal distributions on a common scale.\n",
+        "\n",
+        "* Probability Calculations: The standard normal table or statistical software can be used to easily calculate probabilities associated with any normally distributed variable by converting it to a Z-score.\n",
+        "\n",
+        "* Hypothesis Testing: Many statistical tests, such as the Z-test, rely on the standard normal distribution to determine the significance of results.\n",
+        "\n",
+        "* Confidence Intervals: The standard normal distribution is used to construct confidence intervals for population parameters.\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "Hf0DxCiD5j67"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.13 What is the Central Limit Theorem (CLT), and why is it critical in statistics.\n",
+        "\n",
+        "The Central Limit Theorem (CLT) states that the distribution of the sample means approaches a normal distribution as the sample size gets larger, regardless of the shape of the population distribution.\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "RBUy94rQ6OfX"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.14 How does the Central Limit Theorem relate to the normal distribution.\n",
+        "\n",
+        "The CLT's core idea is that the sampling distribution of the sample mean becomes approximately normal, even if the original population data does not follow a normal distribution.\n",
+        "\n",
+        "1.Mean and Standard Deviation: The mean of the sampling distribution of the sample mean is equal to the population mean (μ). The standard deviation of the sampling distribution of the sample mean (also known as the standard error) is equal to the population standard deviation (σ) divided by the square root of the sample size (√n). This is expressed as:\n",
+        "\n",
+        "2.Convergence to Normality: The CLT states that as the sample size (n) increases, the distribution of sample means will converge to a normal distribution. This means that the shape of the distribution of sample means will resemble a bell curve, regardless of the original population's distribution.\n",
+        "\n",
+        "3.Practical Application: Due to the CLT, we can often use the normal distribution to make inferences about the population mean, even if the population data is not normally distributed. This is particularly useful when the sample size is large (typically considered n ≥ 30).\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "MrAkBn0o6h-p"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.15 What is the application of Z statistics in hypothesis testing.\n",
+        "\n",
+        "Z statistics play a crucial role in hypothesis testing when we are dealing with normally distributed data or when the sample size is large enough to apply the Central Limit Theorem (CLT).\n",
+        "\n",
+        "Here's how Z statistics are used:\n",
+        "\n",
+        "1.Calculating the Z-score: We calculate a Z-score, which measures how many standard deviations a sample statistic (e.g., sample mean) is away from the hypothesized population parameter (e.g., population mean). The formula for the Z-score is:\n",
+        "\n",
+        "Z = (sample statistic - hypothesized population parameter) / standard error\n",
+        "\n",
+        "where the standard error is the standard deviation of the sampling distribution of the sample statistic.\n",
+        "\n",
+        "2.Determining the p-value: Using the calculated Z-score, we can determine the p-value, which is the probability of obtaining a sample statistic as extreme as or more extreme than the observed one, assuming the null hypothesis is true. The p-value is obtained from the standard normal distribution table or using statistical software.\n",
+        "\n",
+        "3.Making a Decision:\n",
+        " We compare the p-value to a predetermined significance level (α), typically 0.05.\n",
+        "\n",
+        "If the p-value is less than α, we reject the null hypothesis in favor of the alternative hypothesis.\n",
+        "\n",
+        "If the p-value is greater than α, we fail to reject the null hypothesis.\n",
+        "Types of Hypothesis Tests Using Z Statistics\n",
+        "\n",
+        "4.Z statistics are commonly used in the following types of hypothesis tests:\n",
+        "\n",
+        "One-sample Z-test: To test the mean of a single sample against a hypothesized population mean.\n",
+        "Two-sample Z-test: To compare the means of two independent samples.\n",
+        "Z-test for proportions: To test the proportion of a characteristic in a sample against a hypothesized population proportion.\n"
+      ],
+      "metadata": {
+        "id": "pbQviCVP6-o9"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.16 How do you calculate a Z-score, and what does it represent.\n",
+        "\n",
+        "\n",
+        "A Z-score (also called a standard score) is a numerical measurement that describes a value's relationship to the mean of a group of values. It is measured in terms of standard deviations from the mean.\n",
+        "\n",
+        "formula to calculate z score\n",
+        "Z = (X - μ) / σ\n"
+      ],
+      "metadata": {
+        "id": "2UO2IVVK7yZp"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.17 What are point estimates and interval estimates in statistics.\n",
+        "\n",
+        "1. Point estimates: A point estimate is a single value that is used to estimate an unknown population parameter. It's the \"best guess\" of the parameter based on the sample data.\n",
+        "\n",
+        "2. interval estimates:  An interval estimate provides a range of values within which we are confident the true population parameter lies. This range is called a confidence interval.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "wun5lgxM8Fp2"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.18 What is the significance of confidence intervals in statistical analysis.\n",
+        "\n",
+        "A confidence interval is a range of values within which we are confident the true population parameter lies. It is calculated from sample data and is associated with a confidence level, which represents the probability that the interval contains the true parameter.\n",
+        "\n",
+        "significant of confidence interval -\n",
+        "\n",
+        "1. Quantifing uncertainty\n",
+        "\n",
+        "2. provides a range of plausible values\n",
+        "\n",
+        "3. making infereances about the population\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "nw2jqSr18kEA"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.19 What is the relationship between a Z-score and a confidence interval.\n",
+        "\n",
+        "The relationship between a Z-score and a confidence interval lies in how the margin of error is calculated for the confidence interval.\n",
+        "\n",
+        "Margin of Error: The margin of error is determined by multiplying the critical value (Z-score) by the standard error. The critical value corresponds to the desired confidence level and is obtained from the standard normal distribution table or using statistical software.\n",
+        "\n",
+        "Confidence Level and Z-score: The confidence level determines the critical value (Z-score) used in the calculation of the margin of error.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "rT_vfwiL9V7P"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.20 How are Z-scores used to compare different distributions.\n",
+        "\n",
+        "Z-scores are a powerful tool for comparing data points from different distributions because they standardize the data. Standardization transforms data into a common scale, allowing for meaningful comparisons even when the original distributions have different means and standard deviations.\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "fUcHXeu49rmq"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.21 What are the assumptions for applying the Central Limit Theorem.\n",
+        "\n",
+        "The Central Limit Theorem (CLT) is a powerful tool in statistics, but it's important to understand the assumptions under which it holds true. These assumptions ensure that the sampling distribution of the sample mean will be approximately normal, allowing us to make valid inferences about the population.\n",
+        "\n",
+        "Here are the key assumptions for applying the CLT:\n",
+        "\n",
+        "1. Random Sampling: The data must be collected using a random sampling method. This means that each member of the population has an equal chance of being selected for the sample. Random sampling helps to ensure that the sample is representative of the population and reduces the risk of bias.\n",
+        "\n",
+        "2. Independence: The observations in the sample must be independent of each other. This means that the value of one observation does not influence the value of any other observation. Independence is often violated in situations where data is collected over time or when there are clusters of observations.\n",
+        "\n",
+        "3. Sample Size: While the CLT technically holds true for any sample size, the approximation to a normal distribution becomes more accurate as the sample size increases. A commonly used rule of thumb is that the sample size should be at least 30 for the CLT to be reliable. However, for some distributions that are heavily skewed or have heavy tails, a larger sample size may be necessary.\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "WsShXd7b94O0"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.22 What is the concept of expected value in a probability distribution.\n",
+        "\n",
+        "In probability theory, the expected value (also called the expectation, mean, or average) of a random variable is a long-run average value of the variable. It represents the central tendency of the probability distribution.\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "8ZtHXFHh-ZKD"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q.23 How does a probability distribution relate to the expected outcome of a random variable?\n",
+        "\n",
+        "The probability distribution and the expected outcome of a random variable are closely related:\n",
+        "\n",
+        "1. The probability distribution determines the expected outcome: The expected value is calculated directly from the probabilities assigned to each outcome in the probability distribution.\n",
+        "\n",
+        "2. The expected outcome is a summary of the probability distribution: The expected value provides a single value that represents the central tendency of the distribution. It summarizes the overall behavior of the random variable.\n",
+        "\n",
+        "3. The probability distribution provides a more complete picture: While the expected value gives a single measure, the probability distribution provides a more detailed view of the likelihood of different outcomes.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "fihujm1B-oiY"
+      }
+    }
+  ]
+}
